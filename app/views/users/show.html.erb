@@ -1,0 +1,12 @@
+<h3>User Detailed:</h3>
+<div id="block">
+<p>User: <%= @user.name %></p>
+<p>Email: <%= @user.email if @user.email %></p>
+<%if @user.role_ids==[1]%>
+<p>Role: Admin</p>
+<%elsif @user.role_ids==[2]%>
+<p>Role: Author</p>
+<%elsif @user.role_ids==[3]%>
+<p>Role: User</p>
+<%end%>
+</div>

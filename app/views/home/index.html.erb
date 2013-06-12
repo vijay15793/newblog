@@ -1,0 +1,7 @@
+<h3>User Registered :</h3>
+<div id="block">
+<% @users.each do |user| %>
+  <p>User: <%=link_to user.name, {:action=>'show', :controller =>:users , :id => user.id }%></p>
+<% end %>
+
+</div>

@@ -1,0 +1,17 @@
+<h2>Comments</h2>
+<p>
+  <b>Commenter:</b>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <b>Comment:</b>
+  <%= comment.body %>
+</p>
+ 
+<p><%if can? :destroy ,comment or (Post.find(comment.post_id)).user_id == current_user.id%>
+  <%= link_to 'Destroy Comment', [comment.post, comment],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+               <% end %>
+</p>

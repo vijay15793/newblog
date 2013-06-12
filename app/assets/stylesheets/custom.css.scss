@@ -1,0 +1,172 @@
+@import "bootstrap";
+
+body { padding-top: 60px; }
+
+@import "bootstrap-responsive";
+
+.content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+/* universal */
+html {
+overflow-y: scroll;
+}
+
+body {
+padding-top: 60px;
+//background-image:url("books.jpg");
+
+
+img
+{
+opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+img:hover 
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+}
+section {
+overflow: auto;
+}
+textarea {
+resize: vertical;
+}
+.center {
+text-align: center;
+}
+.center h1 {
+margin-bottom: 10px;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+h1 {
+font-size: 3em;
+letter-spacing: -2px;
+margin-bottom: 30px;
+text-align: center;
+}
+h2 {
+font-size: 1.7em;
+letter-spacing: 2px;
+margin-bottom: 30px;
+text-align: left;
+//margin-left: 70px;
+font-weight: normal;
+color: #99A;
+}
+h3 {
+font-size: 2em;
+letter-spacing: -1px;
+margin-bottom: 30px;
+text-align: center;
+}
+p {
+font-size: 1.1em;
+line-height: 1.7em;
+}
+#block{
+  float:center;
+  resize:both;
+  overflow:auto;
+  padding:15px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #888888;
+  //text-align:center;
+  border: 1px solid #AAAAAA;
+  background:#FFFFFF
+ }
+ 
+#mainblock{
+  float:center;
+  resize:both;
+  overflow:auto;
+  padding:15px;
+  border-radius: 10px;
+  //box-shadow: 10px 10px 5px #444433;
+  //text-align:center;
+  border: 1px solid #AAAAAA;
+  background:#AABBEE
+  
+
+  
+}
+
+
+table{
+  //padding: 20px;
+  //opacity:0.2;
+  border-collapse:collapse;
+  //align: center;
+  //margin-left: 170px;
+  //float: left;
+  text-align: center;
+  
+}
+
+th{
+  
+ 
+}
+td{
+   
+
+}
+.margin{
+  margin-left: 200px;
+}
+
+#logo {
+float: left;
+margin-right: 10px;
+margin-left: 10px;
+font-size: 1.7em;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+padding-top: 9px;
+font-weight: bold;
+line-height: 1;
+}
+#logo:hover {
+color: #F22;
+text-decoration: none;
+}
+
+/* footer */
+footer {
+margin-top: 280px;
+padding-top: 5px;
+border-top: 1px solid #AAAAAA;
+color: #999;
+}
+footer a {
+color: #555;
+}
+footer a:hover {
+color: #222;
+}
+footer small {
+float: left;
+}
+footer ul {
+float: right;
+list-style: none;
+}
+footer ul li {
+float: left;
+margin-left: 10px;
+}

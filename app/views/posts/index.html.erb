@@ -1,0 +1,59 @@
+<h3>Listing posts</h3>
+ 
+<% @posts.each do |post| %>
+<div id="mainblock">
+<div id="block">
+<table>
+
+  <tr>
+    <th>Name:</th>
+    <td><%= post.name %></td>
+    
+  </tr>
+  <tr>
+    <th>Title:</th>
+    <td><%= post.title %></td>
+  </tr>  
+  <tr>
+    <th>Content:</th>
+    <td><%= post.content %></td>
+   </tr>
+   <tr>
+    <td><%= link_to 'Show', post %></td>
+    <%if can? :edit ,post%>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <%end%>
+    <%if can? :destroy ,post%>
+    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?',
+                                     :method => :delete %></td>
+    <%end%>                                 
+    </tr>
+   </table>
+    </div >
+    
+    	
+  <div id="block" size="50x60">
+  	<%if post.comments!= ''%>
+         <%= render post.comments %>
+         <% end %>
+          <%if can? :create,Comment%>
+          <div>
+       <h2>Add a comment:</h2>
+       <%@post=Post.find(post.id)%>
+       <%= render "comments/form"%>
+        </div>
+        <% end %>
+  </div>
+         
+
+
+
+
+<br />
+</div>
+<br />
+<% end %> 
+<br />
+<%if can? :create ,Post%>
+<%= link_to 'New post', new_post_path %>
+<% end %> 

@@ -1,0 +1,6 @@
+GMAIL_USERNAME: Vijay 
+GMAIL_PASSWORD: vijay123
+ADMIN_NAME: vijay
+ADMIN_EMAIL: vijay@gmail.com
+ADMIN_PASSWORD: vijay123
+ROLES: [admin, auther, user]
